@@ -12,6 +12,10 @@ import { StudentListComponent } from './student-list/student-list.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    StudentComponent,
+    StudentListComponent
   ]
 })
 export class StudentsModule { }
