@@ -9,23 +9,14 @@
     <th>Delete</th>
   </thead>
   <tbody>
-    <tr class="text-center">
-      <td>Shubu</td>
-      <td>Shubu</td>
-      <td>Shubu</td>
-      <td>Shubu</td>
-      <td>Shubu</td>
-      <td><a href=""><i class="text-warning fa fa-edit"></i></a></td>
-      <td><a href=""><i class="text-danger fa fa-trash"></i></a></td>
-    </tr>
-    <tr class="text-center">
-      <td>Shubu</td>
-      <td>Shubu</td>
-      <td>Shubu</td>
-      <td>Shubu</td>
-      <td>Shubu</td>
-      <td><a href=""><i class="text-warning fa fa-edit"></i></a></td>
-      <td><a href=""><i class="text-danger fa fa-trash"></i></a></td>
+    <tr class="text-center" *ngFor="let stud of studentService.allStudent">
+      <td>{{stud.firstName}}</td>
+      <td>{{stud.lastName}}</td>
+      <td>{{stud.degree}}</td>
+      <td>{{stud.contact}}</td>
+      <td>{{stud.address}}</td>
+      <td><a (click)="updateStudent(stud)"><i class="text-warning fa fa-edit"></i></a></td>
+      <td><a (click)="deleteStudent(stud.id)"><i class="text-danger fa fa-trash"></i></a></td>
     </tr>
   </tbody>
 </table>

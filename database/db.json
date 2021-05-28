@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstName": "Shubhendu",
+      "lastName": "Kumar",
+      "degree": "MBA",
+      "contact": "7865505045",
+      "address": "Delhi"
+    },
+    {
+      "id": 2,
+      "firstName": "Rashmi",
+      "lastName": "Ranjan",
+      "degree": "B.Tech",
+      "contact": "9878789789",
+      "address": "Odisha"
+    },
+    {
+      "id": 3,
+      "firstName": "Bharath",
+      "lastName": "Gowda",
+      "degree": "B.Tech",
+      "contact": "8676754564",
+      "address": "Mangalore"
+    },
+    {
+      "id": 4,
+      "firstName": "Abhishek",
+      "lastName": "Kumar",
+      "degree": "B.Tech",
+      "contact": "456345333",
+      "address": "Bihar"
+    },
+    {
+      "id": 5,
+      "firstName": "Syed",
+      "lastName": "Mudassir",
+      "degree": "MCA",
+      "contact": "09876767566",
+      "address": "Bengaluru"
+    }
+  ]
+}

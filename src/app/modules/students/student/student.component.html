@@ -1,36 +1,36 @@
 <div class="row">
   <div class="col-md-6 form-group">
     <label for="#fn">First Name</label>
-    <input placeholder="enter first name" class="form-control" id="#fn">
+    <input placeholder="enter first name" class="form-control" id="#fn" [(ngModel)]="studentService.currentStudent.firstName">
   </div>
   <div class="col-md-6 form-group">
     <label for="#ln">Last Name</label>
-    <input placeholder="enter last name" class="form-control" id="#ln">
+    <input placeholder="enter last name" class="form-control" id="#ln" [(ngModel)]="studentService.currentStudent.lastName">
   </div>
 </div>
 <div class="row">
   <div class="col-md-12 form-group">
     <label for="#deg">Degree</label>
-    <input placeholder="enter degree" class="form-control" id="#deg">
+    <input placeholder="enter degree" class="form-control" id="#deg" [(ngModel)]="studentService.currentStudent.degree">
   </div>
 </div>
 <div class="row">
   <div class="col-md-6 form-group">
     <label for="#phn">Contact</label>
-    <input placeholder="enter contact" class="form-control" id="#phn">
+    <input placeholder="enter contact" class="form-control" id="#phn" [(ngModel)]="studentService.currentStudent.contact">
   </div>
   <div class="col-md-6 form-group">
     <label for="#addr">Address</label>
-    <input placeholder="enter address" class="form-control" id="#addr">
+    <input placeholder="enter address" class="form-control" id="#addr" [(ngModel)]="studentService.currentStudent.address">
   </div>
 </div>
 
 
 <div class="row p-2">
   <div class="col-md-8">
-    <button class="btn btn-success btn-block btn-lg"><i class="fa fa-save"> Save</i></button>
+    <button class="btn btn-success btn-block btn-lg" (click)="createAndUpdate(studentService.currentStudent)"><i class="fa fa-save"> Save</i></button>
   </div>
   <div class="col-md-4">
-    <button class="btn btn-danger btn-block btn-lg"><i class="fa fa-retweet"> Clear</i></button>
+    <button class="btn btn-danger btn-block btn-lg" (click)="clear()"><i class="fa fa-retweet"> Clear</i></button>
   </div>
 </div>
